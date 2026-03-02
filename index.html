@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistem Informasi Kamituwa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#0f172a;
+    --accent:#2563eb;
+    --light:#f8fafc;
+    --soft:#e2e8f0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:var(--light);
+    color:#1e293b;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(15,23,42,0.95);
+    padding:18px 60px;
+    display:flex;
+    justify-content:center;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--accent);
+}
+
+/* HERO WITH IMAGE */
+.hero{
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:0 20px;
+    background:
+        linear-gradient(rgba(15,23,42,0.7),rgba(15,23,42,0.7)),
+       url('../assets/img/logomu.png') center/cover no-repeat;
+}
+
+.hero h2{
+    font-size:46px;
+    font-weight:800;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    background:linear-gradient(90deg,#f4c405,#e7bc0e,#dac105);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-shadow:0 5px 25px rgba(250,204,21,0.3);
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:500;
+    letter-spacing:2px;
+    color:#f1f5f9;
+}
+
+/* SECTION */
+.section{
+    max-width:1100px;
+    margin:100px auto;
+    padding:0 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+    font-size:28px;
+    font-weight:700;
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+    width:70px;
+    height:3px;
+    background:var(--accent);
+    display:block;
+    margin:15px auto 0;
+}
+
+/* GRID */
+.grid-top{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:40px;
+    margin-bottom:40px;
+}
+
+.center-card{
+    width:55%;
+    margin:0 auto;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:40px;
+    border-radius:14px;
+    border:1px solid var(--soft);
+    transition:0.3s;
+    text-align:center;
+}
+
+.card h4{
+    margin-bottom:15px;
+    font-weight:700;
+    color:var(--primary);
+}
+
+.card p{
+    color:#475569;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer{
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    margin-top:100px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .grid-top{
+        grid-template-columns:1fr;
+    }
+    .center-card{
+        width:100%;
+    }
+    .hero h2{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    
+    <ul>
+        <li><a href="struktur.html">Beranda</a></li>
+        <li class="nav-item dropdown">
+    <ul class="dropdown-menu shadow border-0 rounded-4 p-3 text-center">
+        <li class="mb-2">
+            <a class="dropdown-item d-flex align-items-center gap-2" 
+               href="https://www.instagram.com/kamisendangtirto?igsh=MTh0MzNtamZjNzczOA==/kamisendangtirto" target="_blank">
+                <i class="bi bi-instagram text-danger"></i> Instagram
+            </a>
+        </li>
+        <li>
+            <a class="dropdown-item d-flex align-items-center gap-2" 
+               href="https://www.tiktok.com/@kamisendangtirto?_r=1&_t=ZS-944EQWbBLwz/@kamisendangtirto" target="_blank">
+                <i class="bi bi-tiktok text-dark"></i> TikTok
+            </a>
+        </li>
+    </ul>
+</li>
+        <li>
+    <a href="https://maps.app.goo.gl/fg3kUCiYqiTMKXwf8/" target="_blank">
+        Lokasi
+    </a>
+</li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>KAMITUWA KALURAHAN</h2>
+    <h2>SENDANGTIRTO</h2>
+</section>
+
+<section class="section">
+    <h3 class="section-title">Tugas & Fungsi</h3>
+
+    <div class="grid-top">
+        <div class="card">
+            <h4>Kedudukan</h4>
+            <p>Seksi Pelayanan berkedudukan sebagai pelaksana teknis Pemerintah Desa dalam bidang kemasyarakatan.</p>
+        </div>
+
+        <div class="card">
+            <h4>Tugas</h4>
+            <p>Melaksanakan tugas operasional di bidang pelayanan dan pemberdayaan masyarakat desa.</p>
+        </div>
+    </div>
+
+    <div class="card center-card">
+        <h4>Fungsi</h4>
+        <p>Pembinaan pendidikan, kesehatan, sosial, budaya, keagamaan, pemuda, dan kesejahteraan masyarakat.</p>
+    </div>
+</section>
+
+<section class="section">
+    <h3 class="section-title">Program Unggulan</h3>
+
+    <div class="grid-top">
+        <div class="card">
+            <h4>Pemberdayaan Masyarakat</h4>
+            <p>Meningkatkan partisipasi dan kemandirian masyarakat berbasis potensi lokal.</p>
+        </div>
+
+        <div class="card">
+            <h4>Pelayanan Administrasi</h4>
+            <p>Pelayanan cepat, transparan, dan berbasis sistem informasi modern.</p>
+        </div>
+    </div>
+
+    <div class="card center-card">
+        <h4>Pelestarian Budaya</h4>
+        <p>Mendukung kegiatan seni, budaya, dan pariwisata desa.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Kamituwa Kalurahan Sendangtirto | Sistem Informasi Desa Modern
+</footer>
+
+</body>
+</html>

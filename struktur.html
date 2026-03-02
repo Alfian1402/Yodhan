@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Struktur & Padukuhan</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e2e8f0, #f8fafc);
+        }
+
+        /* HEADER MEWAH */
+        header.bg-primary {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb) !important;
+            padding: 80px 20px !important;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Ornament Glow */
+        header.bg-primary::before {
+            content: "";
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: rgba(255,255,255,0.06);
+            border-radius: 50%;
+            top: -120px;
+            left: -120px;
+        }
+
+        header.bg-primary::after {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
+            bottom: -100px;
+            right: -100px;
+        }
+
+        /* JUDUL UTAMA GRADIENT EMAS */
+        header h1 {
+            font-size: 48px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, #ffffff, #ffd700, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 25px rgba(255,215,0,0.4);
+            margin-bottom: 10px;
+        }
+
+        /* SUB JUDUL BIRU GLOW */
+        header h2 {
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, #00f2ff, #ffffff, #00f2ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 15px rgba(0,255,255,0.3);
+        }
+
+        /* Card modern */
+        .card {
+            border-radius: 20px !important;
+            border: none !important;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+        }
+
+        /* Tombol fasilitas */
+        .btn-success {
+            border-radius: 12px;
+            transition: 0.3s ease;
+        }
+
+        .btn-success:hover {
+            transform: scale(1.05);
+        }
+
+        /* Tombol padukuhan */
+        .btn-outline-primary {
+            border-radius: 12px;
+            transition: 0.3s ease;
+        }
+
+        .btn-outline-primary:hover {
+            background: #2563eb;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Tombol kembali */
+        .btn-secondary {
+            border-radius: 12px;
+        }
+
+        @media (max-width: 576px) {
+            header.bg-primary {
+                padding: 60px 15px !important;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header class="bg-primary text-white text-center mb-4">
+    <h1>SISTEM INFORMASI</h1>
+    <h2>KAMISENDANGTIRTO</h2>
+</header>
+
+<main class="container">
+
+    <section class="card shadow mb-4 text-center">
+        <div class="card-body">
+            <h3 class="mb-4">Fasilitas Desa</h3>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="padukuhan/Masjid.html" class="btn btn-success px-4">Masjid</a>
+                <a href="#" class="btn btn-success px-4">Mushola</a>
+                <a href="#" class="btn btn-success px-4">Kebudayaan</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="card shadow mb-4">
+        <div class="card-body">
+            <h3 class="text-center mb-4">Daftar 18 Padukuhan</h3>
+
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                <div class="col"><a href="padukuhan/cepor.html" class="btn btn-outline-primary w-100">Cepor</a></div>
+                <div class="col"><a href="padukuhan/dawukan.html" class="btn btn-outline-primary w-100">Dawukan</a></div>
+                <div class="col"><a href="padukuhan/gamelan.html" class="btn btn-outline-primary w-100">Gamelan</a></div>
+                <div class="col"><a href="padukuhan/gandu.html" class="btn btn-outline-primary w-100">Gandu</a></div>
+                <div class="col"><a href="padukuhan/jetak.html" class="btn btn-outline-primary w-100">Jetak</a></div>
+                <div class="col"><a href="padukuhan/kadipolo.html" class="btn btn-outline-primary w-100">Kadipolo</a></div>
+                <div class="col"><a href="padukuhan/karangasem.html" class="btn btn-outline-primary w-100">Karangasem</a></div>
+                <div class="col"><a href="padukuhan/kemasan.html" class="btn btn-outline-primary w-100">Kemasan</a></div>
+                <div class="col"><a href="padukuhan/klakah.html" class="btn btn-outline-primary w-100">Klakah</a></div>
+                <div class="col"><a href="padukuhan/klodangan.html" class="btn btn-outline-primary w-100">Klodangan</a></div>
+                <div class="col"><a href="padukuhan/maredan.html" class="btn btn-outline-primary w-100">Maredan</a></div>
+                <div class="col"><a href="padukuhan/minggiran.html" class="btn btn-outline-primary w-100">Minggiran</a></div>
+                <div class="col"><a href="padukuhan/munggon.html" class="btn btn-outline-primary w-100">Munggon</a></div>
+                <div class="col"><a href="padukuhan/noyokerten.html" class="btn btn-outline-primary w-100">Noyokerten</a></div>
+                <div class="col"><a href="padukuhan/sekarsuli.html" class="btn btn-outline-primary w-100">Sekarsuli</a></div>
+                <div class="col"><a href="padukuhan/sendang.html" class="btn btn-outline-primary w-100">Sendang</a></div>
+                <div class="col"><a href="padukuhan/sribit.html" class="btn btn-outline-primary w-100">Sribit</a></div>
+                <div class="col"><a href="padukuhan/tampungan.html" class="btn btn-outline-primary w-100">Tampungan</a></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center mb-5">
+        <button onclick="goBack()" class="btn btn-secondary px-4">
+            ⬅ Kembali
+        </button>
+    </div>
+
+</main>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+</body>
+</html>

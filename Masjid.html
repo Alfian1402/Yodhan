@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Masjid Desa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    font-family:'Poppins',sans-serif;
+    background: radial-gradient(circle at top left, #1e293b, #0f172a 60%);
+    margin:0;
+    color:#f1f5f9;
+}
+
+/* HEADER MEWAH */
+.header{
+    height:55vh;
+    background: linear-gradient(135deg, #0f172a, #111827, #1e3a8a);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.header::after{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle, rgba(250,204,21,0.2), transparent 70%);
+    top:-100px;
+    right:-100px;
+}
+
+.header h1{
+    font-weight:700;
+    font-size:48px;
+    background:linear-gradient(90deg,#facc15,#f59e0b);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    letter-spacing:2px;
+}
+
+.header h2{
+    color:#cbd5e1;
+    margin-top:10px;
+    font-weight:400;
+}
+
+/* CARD SECTION GLASS */
+section{
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+    border:1px solid rgba(255,255,255,0.1);
+    max-width:1100px;
+    margin:-80px auto 60px;
+    padding:50px;
+    border-radius:30px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.4);
+}
+
+section h3{
+    font-weight:700;
+    font-size:26px;
+    margin-bottom:25px;
+    background:linear-gradient(90deg,#facc15,#eab308);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+section p{
+    margin-bottom:10px;
+    color:#e2e8f0;
+}
+
+/* GALERI PREMIUM */
+.galeri{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.galeri img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.4s ease;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.galeri img:hover{
+    transform:scale(1.07);
+    box-shadow:0 15px 40px rgba(250,204,21,0.4);
+}
+
+/* MAP */
+iframe{
+    border-radius:20px;
+    margin-top:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .header{
+        height:40vh;
+        padding:20px;
+    }
+
+    .header h1{
+        font-size:32px;
+    }
+
+    section{
+        padding:30px;
+        margin-top:-50px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header class="header d-flex flex-column justify-content-center align-items-center">
+    <h1>DATA MASJID DESA</h1>
+    <h2>Seluruh Masjid di Kalurahan Sendangtirto</h2>
+</header>
+
+<section id="as-sholihin">
+    <h3>Masjid As-Sholihin</h3>
+
+    <p><b>Padukuhan:</b> Cepor</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid As-Sholihin Cepor</h3>
+  <a href="https://www.google.com/maps?q=Masjid+As-Sholihin+Cepor"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid As-Sholihin Cepor</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/as-sholihin1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/as-sholihin3.png" alt="Kegiatan Jamaah">
+        <img src="../assets/img/as-sholihin4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="An-Nur">
+    <h3>Masjid An-Nur</h3>
+
+    <p><b>Padukuhan:</b> Dawukan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid An-Nur Dawukan</h3>
+  <a href="https://maps.app.goo.gl/Ro1tpDuZuEFpoDJn9"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid An-Nur Dawukan</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/An-Nur1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/An-Nur2.png" alt="Interior Masjid">
+        <img src="../assets/img/An-Nur3.png" alt="Kegiatan Jamaah">
+    </div>
+</section>
+
+<section id="Nurul-Hidayah">
+    <h3>Masjid Nurul Hidayah</h3>
+
+    <p><b>Padukuhan:</b>Dawukan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Nurul Hidaayah</h3>
+  <a href="https://maps.app.goo.gl/Z9gWSV8mXnvExags8"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid Nurul Hidayah</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Nurul-Hidayah1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Nurul-Hidayah2.png" alt="Interior Masjid">
+        <img src="../assets/img/Nurul-Hidayah3.png" alt="Kegiatan Jamaah">
+
+    </div>
+</section>
+
+
+<section id="Jami'Almuttaqien">
+    <h3>Masjid Jami'Almuttaqien</h3>
+
+    <p><b>Padukuhan:</b>Dawukan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Jami'Almuttaqien</h3>
+  <a href="https://maps.app.goo.gl/TSFCfGU5qbN4C76K9"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid Jami'Almuttaqien</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Jami'Almuttaqien1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Jami'Almuttaqien2.png" alt="Interior Masjid">
+        <img src="../assets/img/Jami'Almuttaqien3.png" alt="Kegiatan Jamaah">
+       
+    </div>
+</section>
+
+
+
+<section id="Al-Ikhlas-Dadapan">
+    <h3> Masjid Al Ikhlas</h3>
+
+    <p><b>Padukuhan:</b>Dawukan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al Ikhlas</h3>
+  <a href="https://maps.app.goo.gl/sCsciTxJZJHHfnD9A"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid Al Ikhlas</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-Ikhlas-Dadapan1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-Ikhlas-Dadapan3.png" alt="Kegiatan Jamaah">
+        <img src="../assets/img/Al-Ikhlas-Dadapan4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="Al-Muhajirin">
+    <h3>Masjid Al Muhajirin</h3>
+
+    <p><b>Padukuhan:</b>Dawukan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al Muhajirin</h3>
+  <a href="https://maps.app.goo.gl/HK89ycj8bpVTEtj48"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid Al Muhajirin</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-Muhajirin1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-Muhajirin2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-Muhajirin3.png" alt="Kegiatan Jamaah">
+        
+    </div>
+</section>
+
+<section id="Taqwa">
+    <h3>Masjid Taqwa</h3>
+
+    <p><b>Padukuhan:</b> Gamelan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Taqwa Gamelan</h3>
+  <a href="https://maps.app.goo.gl/4jHmz7MBLXqpfFcx6"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid Taqwa Gamelan</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Taqwa1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Taqwa2.png" alt="Interior Masjid">
+        <img src="../assets/img/Taqwa3.png" alt="Kegiatan Jamaah">
+        
+    </div>
+</section>
+
+
+<section id="Qolbun-Salim">
+    <h3>Masjid Qolbun Salim Baitul</h3>
+
+    <p><b>Padukuhan:</b> Gandu</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Qolbun Salim Gandu</h3>
+  <a href="https://maps.app.goo.gl/p7N291GTWax4Ms5VA"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Qolbun Salim</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/QolbunSalim1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/QolbunSalim2.png" alt="Interior Masjid">
+        <img src="../assets/img/QolbunSalim3.png" alt="Kegiatan Jamaah">
+        <img src="../assets/img/QolbunSalim4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+<section id="Al-Mujahidin">
+    <h3>Masjid Al Mujahidin</h3>
+
+    <p><b>Padukuhan:</b> Gandu</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al Mujahidin</h3>
+ <a href="https://maps.app.goo.gl/uhMja8LKaioaP5fc6"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Al Mujahidin</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/AlMujahidin1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/AlMujahidin2.png" alt="Interior Masjid">
+        <img src="../assets/img/AlMujahidin4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="As-Saajinah">
+    <h3>Masjid As Saajinah</h3>
+
+    <p><b>Padukuhan:</b> Gandu</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid As Saajinah</h3>
+  <a href="https://maps.app.goo.gl/yEWgDQWFm72zcveU7"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid As Saajinah</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/AsSaajinah1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/AsSaajinah3.png" alt="Kegiatan Jamaah">
+        <img src="../assets/img/AsSaajinah4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+<section id="Ibnu-Qayim">
+    <h3>Masjid Ibnu Qayim</h3>
+
+    <p><b>Padukuhan:</b> Gandu</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Ibnu Qayim</h3>
+  <a href="https://maps.app.goo.gl/kFQiYp1UUG61Gvyq9"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Ibnu Qayim</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/IbnuQayim1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/IbnuQayim2.png" alt="Interior Masjid">
+    
+        <img src="../assets/img/IbnuQayim4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="Masjid-An-Nur">
+    <h3>Masjid An Nur</h3>
+
+    <p><b>Padukuhan:</b> Gandu</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid An Nur</h3>
+  <a href="https://maps.app.goo.gl/pRpQEVh6meE77Z176"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid An Nur</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/AnNurGandu1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/AnNurGandu3.png" alt="Kegiatan Jamaah">
+        <img src="../assets/img/AnNurGandu4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="Masjid-Nur-Hadi">
+    <h3>Masjid Nur Hadi</h3>
+
+    <p><b>Padukuhan:</b> Gandu</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Nur Hadi</h3>
+ <a href="https://maps.app.goo.gl/QiGcpfALW3X4CiZAA"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Nur Hadi</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/NurHadi1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/NurHadi2.png" alt="Interior Masjid">
+        <img src="../assets/img/NurHadi3.png" alt="Kegiatan Jamaah">
+    
+    </div>
+</section>
+
+<section id="Al-Falaah">
+    <h3>Masjid Al-Falaah</h3>
+
+    <p><b>Padukuhan:</b> Jetak</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-Falaah Jetak</h3>
+ <a href="https://maps.app.goo.gl/tyingNUPeV5fLCNF8"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Al-Falaah</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-Falaa1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-Falaa2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-Falaa3.png" alt="Kegiatan Jamaah">
+        
+    </div>
+</section>
+
+
+<section id="Rohmat">
+    <h3>Masjid Rohmad</h3>
+
+    <p><b>Padukuhan:</b> Kadipolo</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Rohmat Kadipolo</h3>
+ <a href="https://maps.app.goo.gl/VvojeSGv6GjVAsP37"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Rohmad</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Rohmat1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Rohmat2.png" alt="Interior Masjid">
+        <img src="../assets/img/Rohmat3.png" alt="Kegiatan Jamaah">
+    </div>
+</section>
+
+
+
+<section id="Al-Ittihad">
+    <h3>Masjid Al-Ittihaad</h3>
+
+    <p><b>Padukuhan:</b> Kadipolo</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-Ittihad Kadipolo</h3>
+  <h3>Lokasi Masjid Rohmat Kadipolo</h3>
+ <a href="https://maps.app.goo.gl/TdFeHzcuni8kCYjk9"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Al-Ittihad</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-Ittihad1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-Ittihad3.png" alt="Kegiatan Jamaah">
+        <img src="../assets/img/Al-Ittihad4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="Al-Imam">
+    <h3>Masjid Al-Imam</h3>
+
+    <p><b>Padukuhan:</b> Kadipolo</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-Imam Kadipolo</h3>
+  <a href="https://maps.app.goo.gl/5qHww8WDzjorhjrc8"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Al-Imam</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-ImamKadipolo1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-ImamKadipolo2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-ImamKadipolo3.png" alt="Kegiatan Jamaah">
+       
+    </div>
+</section>
+
+
+<section id="Baitussallam">
+    <h3>Masjid Baitussallam</h3>
+
+    <p><b>Padukuhan:</b> Karangasem</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Baitussallam karangasem</h3>
+  <a href="https://maps.app.goo.gl/nqXw1CwgeNxraN9r6"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Baitussallam</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Baitussallam1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Baitussallam2.png" alt="Interior Masjid">
+        <img src="../assets/img/Baitussallam4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="Nuur-Iman">
+    <h3>Masjid Nuur Iman</h3>
+
+    <p><b>Padukuhan:</b> Karangasem</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Nuur Iman karangasem</h3>
+ <a href="https://maps.app.goo.gl/tymbsdSZdAYXTY1QA"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Nuur Iman</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/NuurIman1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/NuurIman2.png" alt="Interior Masjid">
+        <img src="../assets/img/NuurIman4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+<section id="Masjid Al-Ikhlas">
+    <h3>Masjid Al-Ikhlas</h3>
+    <p><b>Padukuhan:</b> Kemasan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+    <p><b>Keterangan:</b> Masjid Al Ikhlas Kemasan dapat menampung sekitar 50 jamaah di area dalam dan 100 jamaah di area luar. Masjid ini dilengkapi fasilitas kamar mandi dan toilet yang bersih serta dapat digunakan untuk kegiatan pengajian dengan kapasitas tamu hingga 100 orang.</p>
+<h3>Lokasi Masjid Al-Ikhlas Kemasan</h3>
+    <a href="https://maps.app.goo.gl/kNDShaYnN4mHku2LA"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+    <h3>Galeri Foto Masjid Al-Ikhlas Kemasan</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/MasjidAl-IkhlasKemasan1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/MasjidAl-IkhlasKemasan3.png" alt="Serambi Depan Masjid">
+        <img src="../assets/img/MasjidAl-IkhlasKemasan4.png" alt="Ruangan Sholat">
+    </div>
+</section>
+
+<section id="HidayatullahKlakah">
+    <h3>Masjid Hidayatullah Klakah</h3>
+
+    <p><b>Padukuhan:</b> Klakah</p>
+    <p><b>Takmir:</b> Bapak Harjono</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+    <p><b>Keterang:</b> Masjid Hidayatullah Klakah memiliki fasilitas yang nyaman dan memadai. Area dalam masjid dilengkapi dengan pendingin ruangan (AC) sehingga jamaah dapat beribadah dengan khusyuk dan nyaman. Masjid ini mampu menampung sekitar 50 jamaah di area dalam dan hingga 100 jamaah di area luar. Selain itu, tersedia fasilitas kamar mandi dan toilet yang bersih serta terawat. Masjid Hidayatullah juga dapat digunakan untuk kegiatan pengajian atau acara keagamaan dengan kapasitas tamu sekitar 100 orang.</p>
+<h3>Lokasi Masjid Hidayatullah Klakah</h3>
+  <a href="https://maps.app.goo.gl/qzkZtMmrFcXEVw988"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+<h3>Galeri Foto Masjid Hidayatullah Klakah</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/masjidhidayatullah1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/masjidhidayatullah2.png" alt="Area Masjid Depan">
+        <img src="../assets/img/masjidhidayatullah3.png" alt="Area Sholat Jamaah">
+    </div>
+</section>
+
+<section id="Al-Hikmah">
+    <h3>Masjid Al-Hikmah Klodangan</h3>
+
+    <p><b>Padukuhan:</b> Klodangan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+
+<h3>Lokasi Masjid Al-Hikmah Klodangan</h3>
+  <a href="https://maps.app.goo.gl/qmDLpi97nim2nwVt9"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Al-Hikmah</h3>
+    <div class="galeri">
+        <img src="../assets/img/Al-AminKLodangan1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-AminKLodangan2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-AminKLodangan3.png" alt="Kegiatan Jamaah">
+    </div>
+
+</section>
+
+<section id="Al-Amin">
+    <h3>Masjid Al-Amin Klodangan</h3>
+
+    <p><b>Padukuhan:</b> Klodangan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+
+<h3>Lokasi Masjid Al-Amin Klodangan</h3>
+  <a href="https://maps.app.goo.gl/mqCiT4yVT8HLPCVE6"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Al-Amin</h3>
+    <div class="galeri">
+        <img src="../assets/img/Al-HikmahKLodangan1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-HikmahKLodangan2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-HikmahKLodangan3.png" alt="Kegiatan Jamaah">
+    </div>
+
+</section>
+
+<section id="Babussalam">
+    <h3>Masjid Babussalam Maredan</h3>
+
+    <p><b>Padukuhan:</b> Maredan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Babussalam Maredan</h3>
+  <a href="https://maps.app.goo.gl/LxNLY8GvLjdiHyaS8"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Babussalam</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Babussalam1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Babussalam2.png" alt="Interior Masjid">
+        <img src="../assets/img/Babussalam3.png" alt="Kegiatan Jamaah">
+  
+    </div>
+</section>
+
+
+<section id="Al-Iman">
+    <h3>Masjid Al-Iman Minggiran</h3>
+
+    <p><b>Padukuhan:</b> Minggiran</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+    <p><b>Keterangan:</b> Masjid Al-Iman Minggiran merupakan fasilitas ibadah dengan lingkungan yang bersih, area parkir luas, serta kapasitas hingga 100 orang lebih, sehingga sangat mendukung pelaksanaan pengajian dan kegiatan keagamaan masyarakat.</p>
+<h3>Lokasi Masjid Al-Iman Minggiran</h3>
+  <a href="https://maps.app.goo.gl/L73wLZzxuNWLhPxt8"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid Al-Iman Minggiran</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-ImanMinggiran1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-ImanMinggiran2.png" alt="Area Sholat Masjid">
+        <img src="../assets/img/Al-ImanMinggiran3.png" alt="Parkir Jamaah">
+   
+    </div>
+</section>
+
+
+<section id="Al-Muslimin-Abu-Abdurahman">
+    <h3>Masjid Al-Muslimin Abu Abdurahman</h3>
+
+    <p><b>Padukuhan:</b> Minggiran</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-Muslimin Abu Abdurahman</h3>
+   <a href="https://maps.app.goo.gl/caSfs684no8NmHEJ6"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Al-Muslimin Abu Abdurahman</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-Muslimin-Abu-Abdurahman1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-Muslimin-Abu-Abdurahman2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-Muslimin-Abu-Abdurahman4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="Al-Iman-Munggon">
+    <h3>Masjid Al-Iman Munggon</h3>
+
+    <p><b>Padukuhan:</b> Munggon</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-Iman Munggon</h3>
+   <a href="https://maps.app.goo.gl/c2qsYwS28QFodCHT6"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Al-Iman Munggon</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-ImanMunggon1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-ImanMunggon2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-ImanMunggon4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="Al-Ikhsan-Munggon">
+    <h3>Masjid Al-Ikhsan Munggon</h3>
+
+    <p><b>Padukuhan:</b> Munggon</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-Ikhsan Munggon</h3>
+  <a href="https://maps.app.goo.gl/fPc86dRu6hsepPbf9"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Al-Ikhsan Munggon</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-IkhlasMunggon1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-IkhlasMunggon2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-IkhlasMunggon3.png" alt="Kegiatan Jamaah">
+    </div>
+</section>
+
+<section id="Sulthoni-Wotgaleh">
+    <h3>Masjid Sulthoni Wotgaleh</h3>
+
+    <p><b>Padukuhan:</b> Noyokerten</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Sulthoni Wotgaleh</h3>
+  <a href="https://maps.app.goo.gl/uBuwq9gaNVebvUbY7"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid Sulthoni Wotgaleh</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/SulthoniWotgaleh1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/SulthoniWotgaleh3.png" alt="Kegiatan Jamaah">
+        <img src="../assets/img/SulthoniWotgaleh4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="Al-I'tikaf">
+    <h3>Masjid Al-I'tikaf</h3>
+
+    <p><b>Padukuhan:</b> Noyokerten</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-I'tikaf</h3>
+  <a href="https://maps.app.goo.gl/1VkVCrE9xkuYS1ze6"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid Al-I'tikaf</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-I'tikaf1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-I'tikaf2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-I'tikaf3.png" alt="Kegiatan Jamaah">
+    </div>
+</section>
+
+<section id="Al-Fatah">
+    <h3>Masjid Al-Fatah</h3>
+
+    <p><b>Padukuhan:</b> Noyokerten</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-Fatah</h3>
+ <a href="https://maps.app.goo.gl/MbmdyYdNaMJy7RZy8"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid Al-Fatah</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-Fatah1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-Fatah2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-Fatah4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="An-Najah">
+    <h3>Masjid An Najah</h3>
+
+    <p><b>Padukuhan:</b> Noyokerten</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid An Najah</h3>
+   <a href="https://maps.app.goo.gl/VbZv6hy6mGSEKpSE9"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid An Najah</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/AnNajah1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/AnNajah2.png" alt="Interior Masjid">
+        <img src="../assets/img/AnNajah3.png" alt="Kegiatan Jamaah">
+    </div>
+</section>
+
+<section id="baitul-a'laa">
+    <h3>Masjid Baitul A'Laa</h3>
+
+    <p><b>Padukuhan:</b> Noyokerten</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Baitul A'Laa</h3>
+ <a href="https://maps.app.goo.gl/FB4EgQLk8sw6bkcE9"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+
+<h3>Galeri Foto Masjid Baitul A'Laa</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/BaitulA'Laa1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/BaitulA'Laa2.png" alt="Interior Masjid">
+    </div>
+</section>
+
+
+<section id="Al-Muhtadin">
+    <h3>Masjid Al-Muhtadin</h3>
+
+    <p><b>Padukuhan:</b>Sekarsuli</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-Muhtadin</h3>
+  <a href="https://maps.app.goo.gl/xqDvmt3wcfhqWnrq9"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a> 
+
+
+<h3>Galeri Foto Masjid Al-Muhtadin</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-Muhtadin1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-Muhtadin2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-Muhtadin4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="Sunan-Ampel">
+    <h3>Masjid Sunan Ampel</h3>
+
+    <p><b>Padukuhan:</b>Sekarsuli</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Sunan Ampel</h3>
+   <a href="https://maps.app.goo.gl/T7eaZUBnDdrTgePW6"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a> 
+
+
+<h3>Galeri Foto Masjid Sunan Ampel</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/SunanAmpel1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/SunanAmpel2.png" alt="Interior Masjid">
+        <img src="../assets/img/SunanAmpel4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="Ar-Rohman">
+    <h3>Masjid Ar-Rohman</h3>
+
+    <p><b>Padukuhan:</b>Sendang</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Ar-Rohman</h3>
+  <a href="https://maps.app.goo.gl/NbxmmydsvCqopNkC7"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a> 
+
+<h3>Galeri Foto Masjid Ar-Rohman</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Ar-Rohman1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Ar-Rohman3.png" alt="Kegiatan Jamaah">
+        <img src="../assets/img/Ar-Rohman4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+<section id="Nurul-Muttaqien">
+    <h3>Masjid Nurul Muttaqien</h3>
+
+    <p><b>Padukuhan:</b>Sendang</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Nurul Muttaqien</h3>
+  <a href="https://maps.app.goo.gl/NbxmmydsvCqopNkC7"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a> 
+
+<h3>Galeri Foto Masjid Nurul Muttaqien</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/NurulMuttaqien1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/NurulMuttaqien2.png" alt="Interior Masjid">
+        <img src="../assets/img/NurulMuttaqien4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+
+<section id="al'alaa">
+    <h3>Masjid Al'Alaa</h3>
+
+    <p><b>Padukuhan:</b>Sribit</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al'Alaa</h3>
+  <a href="https://maps.app.goo.gl/SRC3c7jpmVp2AVhB7"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a> 
+
+<h3>Galeri Foto Masjid Al'Alaa</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al'Alaa1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al'Alaa2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al'Alaa3.png" alt="Kegiatan Jamaah">
+    </div>
+</section>
+
+
+<section id="Al-kahfi">
+    <h3>Masjid Al kahfi</h3>
+
+    <p><b>Padukuhan:</b>Sribit</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al kahfi</h3>
+   <a href="https://maps.app.goo.gl/JXRhbCHuMU3kcmos7"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a> 
+
+<h3>Galeri Foto Masjid Al kahfi</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/Al-kahfi1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/Al-kahfi2.png" alt="Interior Masjid">
+        <img src="../assets/img/Al-kahfi3.png" alt="Kegiatan Jamaah">
+        
+    </div>
+</section>
+
+
+<section id="al-hidayah">
+    <h3>Masjid Al-Hidayah</h3>
+
+    <p><b>Padukuhan:</b>Tampungan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-Hidayah</h3>
+ <a href="https://maps.app.goo.gl/EvcZLthR3QzVr3k89"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a> 
+
+
+<h3>Galeri Foto Masjid Al-Hidayah</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/AlHidayahTampungan1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/AlHidayahTampungan3.png" alt="Kegiatan Jamaah">
+        <img src="../assets/img/AlHidayahTampungan4.png" alt="Masjid Saat Malam Hari">
+    </div>
+</section>
+
+<section id="al-amin-tampungan">
+    <h3>Masjid Al-Amin Tampungan</h3>
+
+    <p><b>Padukuhan:</b>Tampungan</p>
+    <p><b>Kegiatan:</b> TPA, Pengajian Rutin</p>
+<h3>Lokasi Masjid Al-Amin Tampungan</h3>
+  <a href="https://maps.app.goo.gl/U2xGb8FZHE759nt2A"
+   target="_blank"
+   class="btn btn-success mt-3">
+   📍 Buka Lokasi di Google Maps
+</a>
+
+<h3>Galeri Foto Masjid Al-Amin-Tampungan</h3>
+
+    <div class="galeri">
+        <img src="../assets/img/AlAminTampungan1.png" alt="Masjid Tampak Depan">
+        <img src="../assets/img/AlAminTampungan2.png" alt="Interior Masjid">
+        <img src="../assets/img/AlAminTampungan3.png" alt="Kegiatan Jamaah">
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<section>
+    <button onclick="history.back()">Kembali</button>
+</section>
+
+</body>
+</html>
